@@ -7,5 +7,5 @@ import { JSX } from '@navilla/core';
 
 import { defineCustomElements, applyPolyfills } from '@navilla/core/loader';
 
-applyPolyfills().then(() => { defineCustomElements(window); });
+applyPolyfills().then(() => { defineCustomElements(window); }).catch(() => {});
 export const MyComponent = /*@__PURE__*/createReactComponent<JSX.MyComponent, HTMLMyComponentElement>('my-component');

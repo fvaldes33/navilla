@@ -27,6 +27,11 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return (
+      <div>
+        <h1>Hello, World! I'm {this.getText()}</h1>
+        <h1>Hello, World! I'm {[this.first, this.middle, this.last].join(' ')}</h1>
+      </div>
+    );
   }
 }
